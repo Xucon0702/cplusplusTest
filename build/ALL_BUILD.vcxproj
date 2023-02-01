@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4C702815-4355-3880-84C3-39F0DE0A94F3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\study\vsCode_tmp\stl\xcTest\src;F:\study\vsCode_tmp\stl\xcTest\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\study\vsCode_tmp\stl\xcTest\src;F:\study\vsCode_tmp\stl\xcTest\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\study\vsCode_tmp\stl\xcTest\src;F:\study\vsCode_tmp\stl\xcTest\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\study\vsCode_tmp\stl\xcTest\src;F:\study\vsCode_tmp\stl\xcTest\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\study\vsCode_tmp\stl\xcTest\CMakelists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/study/vsCode_tmp/stl/xcTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\cmake-3.25.1-windows-x86_64\bin\cmake.exe -SF:/study/vsCode_tmp/stl/xcTest -BF:/study/vsCode_tmp/stl/xcTest/build --check-stamp-file F:/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeCCompiler.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/study/vsCode_tmp/stl/xcTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\cmake-3.25.1-windows-x86_64\bin\cmake.exe -SF:/study/vsCode_tmp/stl/xcTest -BF:/study/vsCode_tmp/stl/xcTest/build --check-stamp-file F:/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeCCompiler.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/study/vsCode_tmp/stl/xcTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\cmake-3.25.1-windows-x86_64\bin\cmake.exe -SF:/study/vsCode_tmp/stl/xcTest -BF:/study/vsCode_tmp/stl/xcTest/build --check-stamp-file F:/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeCCompiler.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/study/vsCode_tmp/stl/xcTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\cmake-3.25.1-windows-x86_64\bin\cmake.exe -SF:/study/vsCode_tmp/stl/xcTest -BF:/study/vsCode_tmp/stl/xcTest/build --check-stamp-file F:/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\cmake-3.25.1-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeCCompiler.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\3.25.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\study\vsCode_tmp\stl\xcTest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\study\vsCode_tmp\stl\xcTest\build\ZERO_CHECK.vcxproj">
+      <Project>{FC189F19-CEC3-381B-A273-E4DDB801A0B3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\study\vsCode_tmp\stl\xcTest\build\test.vcxproj">
+      <Project>{1F93DCE2-A770-37BF-BF5F-690E73B15ED8}</Project>
+      <Name>test</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
