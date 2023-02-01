@@ -9,10 +9,14 @@ set(CMAKE_CXX_FLAGS "-O3 -fpermissive")
 include_directories(
     ${PROJECT_SOURCE_DIR}/src
     ${PROJECT_SOURCE_DIR}/src/include
-    ${PROJECT_SOURCE_DIR}/src/base    
+    ${PROJECT_SOURCE_DIR}/src/base
+    ${PROJECT_SOURCE_DIR}/src/lib
+    ${PROJECT_SOURCE_DIR}/src/lib/inc    
     )
     
-# # link_directories()
+link_directories(
+    ${PROJECT_SOURCE_DIR}/src/lib
+)
 
 # message(${PROJECT_SOURCE_DIR}/src/include)
 
@@ -22,13 +26,14 @@ file(GLOB SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/src/base/*.cpp
  )
 
-# message(${SOURCE_FILES})
+message(${SOURCE_FILES})
 
 add_executable(test ${SOURCE_FILES})
 
 
-# target_link_libraries(${PROJECT_NAME}    
-#     )
+target_link_libraries(${PROJECT_NAME}
+    helloWorld    
+    )
 
 #目标文件存储位置
 install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_SOURCE_DIR}/install/bin) 
