@@ -6,6 +6,8 @@ c++standy test
 windows下:
 1:cmake -Bbuild
 2:cmake --build build
+#如果需要install的话编译
+3:cmake --build build --target install 
 
 linux下:
 mkdir build

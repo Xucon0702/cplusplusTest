@@ -1,6 +1,8 @@
-  #include "commonFunc.h"
-  using namespace comFunc;
+#include<iostream>
+#include "commonFunc.h"
 
+  using namespace comFunc;
+//   using namespace std;
   commonFunc::commonFunc(/* args */)
     {
         /*init*/

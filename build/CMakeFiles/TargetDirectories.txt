@@ -1,3 +1,0 @@
-F:/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/test.dir
-F:/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/ALL_BUILD.dir
-F:/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/ZERO_CHECK.dir

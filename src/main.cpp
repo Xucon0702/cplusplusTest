@@ -38,11 +38,11 @@ int main()
     }
 
     cout<<vTest1.size()<<endl;
-    comFuncTest.VectorPrint(vTest1);
+    // comFuncTest.VectorPrint(vTest1);
 
 
     /**/
-    comFuncTest.soloPrint(8);
+    // comFuncTest.soloPrint(8);
     
 
     return 0;

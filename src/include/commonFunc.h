@@ -2,7 +2,7 @@
 #define COMMONFUNC_H
 
 #include<cstdio>
-#include<iostream>
+// #include<iostream>
 #include<vector>
 
 using namespace std;
