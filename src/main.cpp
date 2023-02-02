@@ -2,7 +2,7 @@
 #include<iostream>
 #include<vector>
 #include "commonFunc.h"
-#include "helloWorld.h"
+// #include "helloWorld.h"
 
 using namespace std;
 using namespace comFunc;
@@ -18,7 +18,7 @@ using Tint = int;
 
 int main()
 {
-    helloWorld();
+    // helloWorld();
     vector<int> vTest1;
     commonFunc comFuncTest;
     int tmp = 0;

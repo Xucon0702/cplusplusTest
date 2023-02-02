@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -fpermissive CMakeFiles/test.dir/src/base/base.cpp.o CMakeFiles/test.dir/src/commonFunc.cpp.o CMakeFiles/test.dir/src/main.cpp.o -o test   -L/mnt/f/study/vsCode_tmp/stl/xcTest/src/lib  -Wl,-rpath,/mnt/f/study/vsCode_tmp/stl/xcTest/src/lib: -lhelloWorld 

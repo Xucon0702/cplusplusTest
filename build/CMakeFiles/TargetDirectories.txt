@@ -1,7 +1,0 @@
-/mnt/f/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/test.dir
-/mnt/f/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/edit_cache.dir
-/mnt/f/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/rebuild_cache.dir
-/mnt/f/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/list_install_components.dir
-/mnt/f/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/install.dir
-/mnt/f/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/install/local.dir
-/mnt/f/study/vsCode_tmp/stl/xcTest/build/CMakeFiles/install/strip.dir
