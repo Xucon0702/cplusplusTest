@@ -2,26 +2,30 @@
 #include<iostream>
 #include<vector>
 #include "commonFunc.h"
-// #include "helloWorld.h"
+#include "helloWorld.h"
 
 using namespace std;
 using namespace comFunc;
 using Tint = int;
 
 
+// // 偏特化
+// template <typename T1,typename T2>
+// class commonFunc<double,T1,T2>{
 
-    int compareFunc(const void* a,const void* b)
-    {
-        return ( *(int*)a - *(int*)b );
-    }
-
+// };
 
 int main()
 {
-    // helloWorld();
+    helloWorld();
     vector<int> vTest1;
-    commonFunc comFuncTest;
+    vector<int> vTest2 = {19,2,6,1,28};
+    commonFunc<int,int,char*>  comFuncTest1;//模板类实例化
     int tmp = 0;
+
+    comFuncTest1.age = 10;
+    comFuncTest1.name = "moshi";
+    comFuncTest1.vData = vTest2;
 
     /*排序*/
     int arry1[10] = {1,154,20,18,9,33,46,79,3,58};
@@ -37,13 +41,17 @@ int main()
     {
         vTest1.push_back(i+1);        
     }
-
     cout<<vTest1.size()<<endl;
-    // comFuncTest.VectorPrint(vTest1);
 
+    //类中的模板函数调用    
+    comFuncTest1.VectorPrint();
+    comFuncTest1.showData();
 
-    /**/
-    // comFuncTest.soloPrint(8);
+    //模板函数调用
+    VectorPrint1(vTest2);
+    soloPrint1("swh");
+    
+
     
 
     return 0;
