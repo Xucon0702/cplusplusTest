@@ -1,6 +1,7 @@
 #include <cstdio>
 #include<iostream>
 #include<vector>
+#include <unistd.h>
 #include "commonFunc.h"
 #include "helloWorld.h"
 
@@ -15,13 +16,15 @@ using Tint = int;
 
 // };
 
+
 int main()
 {
     helloWorld();
+    bool runFlag = false;
     vector<int> vTest1;
     vector<int> vTest2 = {19,2,6,1,28};
-    commonFunc<int,int,char*>  comFuncTest1;//模板类实例化
-    int tmp = 0;
+    commonFunc<int,int,string>  comFuncTest1;//模板类实例化
+    int choose = 0;
 
     comFuncTest1.age = 10;
     comFuncTest1.name = "moshi";
@@ -50,9 +53,35 @@ int main()
     //模板函数调用
     VectorPrint1(vTest2);
     soloPrint1("swh");
-    
 
-    
+    //list调试
+    list<int> lst1;
+    list<int> lst2;
+    list_t lst3;    
+
+    while(!runFlag)
+    {
+        showFuncPrompt(choose);
+        switch (choose)
+        {
+        case 1:
+            vectorTest();
+            break;
+        case 2:
+            listTest(lst1,lst2,lst3);
+            listPrt(lst2);
+            break;
+        
+        default:
+        cout<<"wrong choose:please choose again"<<endl;
+            break;
+        }
+
+
+        sleep(1);
+    }
+
+
 
     return 0;
 }
